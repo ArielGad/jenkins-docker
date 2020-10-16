@@ -7,7 +7,8 @@
  
  
  Incase of an error, while running `docker ps` inside the container:
-Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.37/containers/json: dial unix /var/run/docker.sock: connect: permission denied
+ 
+```Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: permission denied```
 
 Run:
 `sudo chown 1000:1000 /var/run/docker.sock`
